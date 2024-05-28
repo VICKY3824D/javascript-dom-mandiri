@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Property</title>
+</head>
+<body>
+    <div id="content" class="content">
+
+    </div>
+    <script>
+
+        const content = document.getElementById("content");
+
+        //buat h1 dan p
+        const judul = document.createElement("h1");
+        judul.textContent = "Jurnal Internasional";
+        content.appendChild(judul);
+ 
+        const isi = document.createElement("p");
+        isi.textContent = "halaman ini berisi jurnal ilmiah yang dipublikasikan di situs internasioal";
+        content.appendChild(isi);
+
+
+    </script>
+</body>
+</html>
