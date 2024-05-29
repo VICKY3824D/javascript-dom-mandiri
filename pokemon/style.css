@@ -1,13 +1,10 @@
-html{
-    background-color: rgb(137, 209, 149);
+.container{
+    background-color: rgb(88, 126, 209);
 }
 
 h1{
     text-align: center;
-    color: rgb(212, 101, 27);
-    background-color: rgb(171, 218, 218);
-    border-style: dashed;
-    border-color: darksalmon;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .pokemon {

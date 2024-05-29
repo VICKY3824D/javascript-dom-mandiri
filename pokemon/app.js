@@ -3,7 +3,7 @@
 const container = document.querySelector("#container");
 const baseImgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 400; i += 4) {
     //container.append(`${i}, `);
 
     // menambahkan 100 elemen dengan class pokemon
@@ -14,7 +14,7 @@ for (let i = 1; i <= 100; i++) {
     const imgPokemon = document.createElement('img');
     imgPokemon.src = `${baseImgURL}${i}.png`;
 
-    //mengetahui gambar ke-i
+    //menandai gambar ke-i
     const label = document.createElement('span');
     label.append(`#${i}`);
 
