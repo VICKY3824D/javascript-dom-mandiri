@@ -1,0 +1,23 @@
+html{
+    background-color: rgb(137, 209, 149);
+}
+
+h1{
+    text-align: center;
+    color: rgb(212, 101, 27);
+    background-color: rgb(171, 218, 218);
+    border-style: dashed;
+    border-color: darksalmon;
+}
+
+.pokemon {
+    display:inline-table;
+    text-align: center;
+}
+
+.pokemon img {
+    display: block;
+    background-color: rgb(204, 188, 117);
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+}
