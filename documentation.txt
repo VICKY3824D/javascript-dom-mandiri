@@ -1,1 +1,1 @@
-hahaha
+ini adalah dokumentasi dari belajar javascript DOM
