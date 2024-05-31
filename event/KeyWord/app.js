@@ -11,7 +11,6 @@ const generateRandomColor = () => {
 function colorize() {
     this.style.backgroundColor = generateRandomColor();
     this.style.color = generateRandomColor();
-    this.style.borderColor = generateRandomColor();
 }
 
 const tombolAll = document.querySelectorAll('button');
