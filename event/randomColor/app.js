@@ -1,7 +1,7 @@
 const button = document.querySelector('button');
 const h1 = document.querySelector('h1');
 
-// mencari warna random 
+// meletakkan warna random 
 function generateRandomColor(){
     const red = Math.floor(Math.random() * 255);
     const green = Math.floor(Math.random() * 255);
