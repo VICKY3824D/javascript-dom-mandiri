@@ -11,3 +11,6 @@ const scream = () => {
 
 // action when on mouse over the button
 button.onmouseover = scream;
+
+const evenbtn = document.querySelector("#evenbtn");
+evenbtn.addEventListener();

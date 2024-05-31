@@ -1,1 +1,1 @@
-ini adalah dokumentasi dari belajar javascript DOM
+ini adalah dokumentasi dari belajar javascript DOM (Event DOM)
