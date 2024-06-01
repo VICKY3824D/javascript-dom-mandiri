@@ -10,19 +10,12 @@ const list = document.querySelector("#notes");
 //     console.log("Berhasil menginput");
 // });
 
+
 // menambah list menggunakan input  keyboard
 form.addEventListener('submit', function (execute) {
     execute.preventDefault();
     const newLi = document.createElement('li');
     newLi.innerText = input.value.toUpperCase();
-});
-
-
-// menambah list menggunakan input  keyboard
-form.addEventListener('submit', function (execute) {
-    execute.preventDefault();
-    const newLi = document.createElement('li');
-    newLi.innerText = input.value;
 
     list.append(newLi);
     input.value = '';
