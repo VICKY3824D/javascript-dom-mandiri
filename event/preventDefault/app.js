@@ -1,11 +1,21 @@
 const form = document.querySelector('#form');
+const input = document.querySelector('input');
+const list = document.querySelector("#notes");
+const del = document.querySelector("#del");
 
-// form.addEventListener('submit', function (execute) {
-//     execute.preventDefault();
-//     console.log('Submitted form');
-// });
+// menambah list menggunakan input  keyboard
+form.addEventListener('submit', function (execute) {
+    execute.preventDefault();
+    const newLi = document.createElement('li');
+    newLi.innerText = input.value;
 
-document.querySelector('a').addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log("Harusnya ke google.com");
+    list.append(newLi);
+    input.value = '';
+
+});
+
+//menghapus list 
+del.addEventListener('click', () => {
+    const currentLi = document.querySelector('li');
+    currentLi.remove();
 });
