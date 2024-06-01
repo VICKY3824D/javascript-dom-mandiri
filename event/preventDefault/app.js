@@ -15,6 +15,14 @@ form.addEventListener('submit', function (execute) {
     execute.preventDefault();
     const newLi = document.createElement('li');
     newLi.innerText = input.value.toUpperCase();
+});
+
+
+// menambah list menggunakan input  keyboard
+form.addEventListener('submit', function (execute) {
+    execute.preventDefault();
+    const newLi = document.createElement('li');
+    newLi.innerText = input.value;
 
     list.append(newLi);
     input.value = '';
@@ -34,3 +42,4 @@ del.addEventListener('click', () => {
 //     const currentLi2 = document.querySelectorAll('ul');
 //     currentLi2.remove();
 // });
+
