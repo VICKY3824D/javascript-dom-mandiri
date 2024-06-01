@@ -2,11 +2,19 @@ const form = document.querySelector('#form');
 const input = document.querySelector('input');
 const list = document.querySelector("#notes");
 
+// input.addEventListener('change',(e) => {
+//     console.log("berhasi diubah");
+// });
+
+// input.addEventListener('input', (e) => {
+//     console.log("Berhasil menginput");
+// });
+
 // menambah list menggunakan input  keyboard
 form.addEventListener('submit', function (execute) {
     execute.preventDefault();
     const newLi = document.createElement('li');
-    newLi.innerText = input.value;
+    newLi.innerText = input.value.toUpperCase();
 
     list.append(newLi);
     input.value = '';
@@ -23,6 +31,6 @@ del.addEventListener('click', () => {
 //menghapus semua list (ada bug)
 // const dela = document.querySelector("#dela");
 // dela.addEventListener('click', () => {
-//     const currentLi2 = document.querySelector('#notes');
+//     const currentLi2 = document.querySelectorAll('ul');
 //     currentLi2.remove();
 // });
