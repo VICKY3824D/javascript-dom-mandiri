@@ -10,7 +10,7 @@ let maxPoint = 10;
 let isMax = false;
 
 let P1Score = 0;
-p1Button.addEventListener('click', () => {
+p1Button.addEventListener('click', function () {
     if (!isMax) {
         P1Score += 1; 
         if (P1Score === maxPoint) {
@@ -22,7 +22,7 @@ p1Button.addEventListener('click', () => {
 });
 
 let P2Score = 0;
-p2Button.addEventListener('click',() => {
+p2Button.addEventListener('click',function() {
     if (!isMax) {
         P2Score += 1;
         if (P2Score === maxPoint) {
@@ -34,7 +34,7 @@ p2Button.addEventListener('click',() => {
     
 });
 
-btnReset.addEventListener('click', () => {
+btnReset.addEventListener('click', function(){
     isMax = false;
     P1Score = 0;
     P2Score = 0;
@@ -44,8 +44,8 @@ btnReset.addEventListener('click', () => {
     p2Display.classList.remove('text-success');
 });
 
-SelectWinPoint.addEventListener('change', () => {
-    maxPoint = this.value;
+SelectWinPoint.addEventListener('change', function(){
+    maxPoint = parseInt(this.value);
     reset();
 });
 
