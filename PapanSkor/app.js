@@ -6,7 +6,7 @@ const SelectWinPoint = document.querySelector('#masukan');
 const p1Display = document.querySelector('#p1-display');
 const p2Display = document.querySelector('#p2-display');
 
-let maxPoint = 30;
+let maxPoint = 10;
 let isMax = false;
 
 let P1Score = 0;
@@ -15,6 +15,7 @@ p1Button.addEventListener('click', () => {
         P1Score += 1; 
         if (P1Score === maxPoint) {
             isMax = true;
+            p1Display.classList.add('text-success');
         }
         p1Display.textContent = P1Score; 
     } 
@@ -26,6 +27,7 @@ p2Button.addEventListener('click',() => {
         P2Score += 1;
         if (P2Score === maxPoint) {
             isMax = true;
+            p2Display.classList.add('text-success');
         }
         p2Display.textContent = P2Score; 
     }
@@ -38,10 +40,12 @@ btnReset.addEventListener('click', () => {
     P2Score = 0;
     p1Display.textContent = 0;
     p2Display.textContent = 0;
+    p1Display.classList.remove('text-success');
+    p2Display.classList.remove('text-success');
 });
 
 SelectWinPoint.addEventListener('change', () => {
-    maxPoint = parseInt(this.value);
+    maxPoint = this.value;
     reset();
 });
 
